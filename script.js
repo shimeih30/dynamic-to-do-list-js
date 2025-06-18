@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Select DOM elements
     const addButton = document.getElementById('add-task-btn');
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create remove button
         const removeBtn = document.createElement('button');
         removeBtn.textContent = "Remove";
-        removeBtn.className = "remove-btn";
+        removeBtn.classList.add('remove-btn'); // Using classList.add here
         
         // Add click event to remove button
         removeBtn.onclick = function() {
